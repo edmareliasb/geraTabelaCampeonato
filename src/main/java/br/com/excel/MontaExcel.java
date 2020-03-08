@@ -4,13 +4,13 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.List;
 
+import br.com.geratabela.GeraTabelaCampeonato;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 
-import br.com.geratabela.GeraTabelaCampeonato;
 import br.com.geratabela.model.Campeonato;
 import br.com.geratabela.model.Partida;
 import br.com.geratabela.model.Rodada;
@@ -20,7 +20,7 @@ public class MontaExcel {
 	public static void main(String[] args) throws IOException {
 
 		GeraTabelaCampeonato gera = new GeraTabelaCampeonato();
-		Campeonato campeonato = gera.gerarTabela();
+		Campeonato campeonato = gera.gerarTabela(1);
 
 		List<Rodada> rodadas = campeonato.getListaRodadas();
 
@@ -70,7 +70,7 @@ public class MontaExcel {
 		// Referencia para Celula
 		// Cell c = null;
 
-		// Criando a primeira linha na LINHA zero, que seria o número 1
+		// Criando a primeira linha na LINHA zero, que seria o nï¿½mero 1
 		// r = sheet.createRow(0);
 
 		// Criando a celula na posicao ZERO, que seria A, com referencia na

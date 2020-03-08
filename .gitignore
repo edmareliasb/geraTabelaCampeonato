@@ -5,6 +5,10 @@
 .settings/
 bin/
 
+# Intellij
+.idea
+.iml
+
 # Maven
 log/
 target/
