@@ -25,7 +25,7 @@ public class MontaExcel {
 		List<Rodada> rodadas = campeonato.getListaRodadas();
 
 		// Criando o arquivo fisico
-		FileOutputStream out = new FileOutputStream("D:\\workbook.xls");
+		FileOutputStream out = new FileOutputStream("tabela-campeonato.xls");
 
 		// Criando area de trabalho para o excel
 		Workbook wb = new HSSFWorkbook();

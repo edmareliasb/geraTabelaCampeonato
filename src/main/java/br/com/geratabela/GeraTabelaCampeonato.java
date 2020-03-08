@@ -16,7 +16,7 @@ public class GeraTabelaCampeonato {
 	public Campeonato gerarTabela(Integer qtdeTurnos) {
 		Campeonato campeonato = new Campeonato();
 
-		List<Time> listaTimes = TimesUtil.carregaListaTimes();
+		List<Time> listaTimes = new TimesUtil().carregaListaTimes();
 
 		if (qtdeTurnos >= 1) {
 			List<Rodada> rodadas = montarRodadas(listaTimes);

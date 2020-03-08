@@ -6,8 +6,6 @@ import br.com.geratabela.model.Partida;
 import br.com.geratabela.model.Rodada;
 import org.junit.Test;
 
-import java.util.List;
-
 public class GeraTabelaTest {
 
 	@Test
